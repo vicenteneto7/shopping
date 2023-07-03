@@ -1,8 +1,8 @@
-.container-left {
+#container-left {
     display: inline-block;
     width: 60%;
     padding-left: 136px;
-    top: 25%;
+    top: 20%;
     position: relative;
 }
 
@@ -45,18 +45,20 @@ button {
     line-height: 36px;
     color: #FFFFFF;
     cursor: pointer;
+    outline: none;
 }
 
-button:hover {
-    opacity: 0.5;
-}
-
-button:active {
-    opacity: 0.8;
+img {
+    position: relative;
+    top: 10%;
+    right: 138px;
 }
 
 header {
-    margin: 24px 0px 0px 57px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
 }
 
 a {
@@ -68,11 +70,15 @@ a {
     cursor: pointer;
 }
 
-a:nth-child(2) {
-    opacity: 0.2;
+button:hover {
+    opacity: 0.5;
 }
 
-a:hover {
+button:active {
+    opacity: 0.8;
+}
+
+a:nth-child(2) {
     opacity: 0.4;
 }
 
@@ -80,8 +86,27 @@ a:active {
     opacity: 0.8;
 }
 
-.right-img {
+a {
+    text-decoration: none;
+    color: #5D5D7D;
+    transition: all 0.5s;
     position: relative;
-    top: 15%;
-    right: 138px;
+}
+
+a:hover {
+    color: #5D5D7D;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    background-color: #5D5D7D;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover::after {
+    width: 100%;
 }
