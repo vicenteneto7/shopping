@@ -1,3 +1,7 @@
+.menu{
+    display: none;
+}
+
 #container-left {
     display: inline-block;
     width: 60%;
@@ -9,7 +13,7 @@
 .container-right {
     display: inline-block;
     background-color: rgb(93, 93, 125, 0.16);
-    width: 40%;
+    width: 40vw;
     height: 100vh;
     position: absolute;
 }
@@ -33,7 +37,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-button {
+.button-1 {
     width: 269px;
     height: 62px;
     background-color: #9499EA;
@@ -54,7 +58,7 @@ img {
     right: 138px;
 }
 
-header {
+#nav-menu {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
@@ -70,12 +74,12 @@ a {
     cursor: pointer;
 }
 
-button:hover {
-    opacity: 0.5;
+.button-1:hover {
+    opacity: 0.8;
 }
 
-button:active {
-    opacity: 0.8;
+.button-1:active {
+    opacity: 0.5;
 }
 
 a:nth-child(2) {
@@ -94,13 +98,13 @@ a {
 }
 
 a:hover {
-    color: #5D5D7D;
+    color: #9b9bd1;
 }
 
 a::after {
     content: "";
     position: absolute;
-    background-color: #5D5D7D;
+    background-color: #9b9bd1;
     height: 2px;
     width: 0;
     left: 0;
@@ -109,4 +113,10 @@ a::after {
 }
 a:hover::after {
     width: 100%;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+
 }
